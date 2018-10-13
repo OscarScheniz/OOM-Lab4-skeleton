@@ -28,6 +28,16 @@ public class TimeZoneTranslatorTest {
 		test2 = TimeZoneTranslator.shiftTimeZone(test2, TimeZone.CENTRAL_EUROPEAN_TIME.getOffset(), TimeZone.US_PACIFIC.getOffset());
 		assertEquals(test2.toString(), "2015-12-31 21:00:00");
 		
+		
+		//test2
+		DateTime testDate1 = new DateTime(2018, 10, 13, 9, 00, 00);
+		String date = "2018-10-13 09:00:00";
+		DateTime string = new DateTime(date);
+		
+		
+		assertEquals(testDate1.toString(), "2018-10-13");
+		assertEquals(string.toString(), "2018-10-13 09:00:00");
+		
 	}
 
 	@Test
