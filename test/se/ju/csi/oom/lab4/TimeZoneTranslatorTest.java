@@ -35,7 +35,7 @@ public class TimeZoneTranslatorTest {
 		DateTime string = new DateTime(date);
 		
 		
-		assertEquals(testDate1.toString(), "2018-10-13");
+		assertEquals(testDate1.toString(), "2018-10-13 09:00:00");
 		assertEquals(string.toString(), "2018-10-13 09:00:00");
 		
 	}
